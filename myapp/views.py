@@ -2,7 +2,7 @@ from django.shortcuts import render
 import openai
 
 # Set up OpenAI API credentials
-openai.api_key = "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"
+openai.api_key = "API Key"
 
 def home(request):
     return render(request, "home.html")
