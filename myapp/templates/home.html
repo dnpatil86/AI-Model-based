@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Q&A with OpenAI</title>
+  </head>
+  <body>
+    <h1>Ask a Question:</h1>
+    <form method="POST" action="{% url 'answer' %}">
+      {% csrf_token %}
+      <input type="text" name="question">
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>

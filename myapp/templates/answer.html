@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Q&A with OpenAI</title>
+  </head>
+  <body>
+    <form method="Get" action="{% url 'home' %}">
+      {% csrf_token %}
+      <h1>Question:</h1>
+      <p>{{ question }}</p>
+      <h1>Answer:</h1>
+      <p>{{ answer }}</p>
+      <input type="submit" value="Ask Other Question">
+    </form>
+  </body>
+</html>
